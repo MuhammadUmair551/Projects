@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop watch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="body-container">
+        <div class="stop-watch-container">
+            <div class="row-1">
+                <div class="left-side">
+                    <div class="Timer">
+                        <i class="fa-solid fa-hourglass"></i>
+                        Timer
+                    </div>
+                    <div class="stop-watch">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        StopWatch
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="sound">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div onclick="fullscr()" class="fullscreen">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="stop-watch-numbers">
+                    <h2 id="min">0</h2>
+                    <h2 id="min-dot">.</h2>
+                    <h2 id="sec">0</h2>
+                    <h2 id="dot">.</h2>
+                    <h2 id="msec">00</h2>
+                </div>
+            </div>
+            <div class="row-3">
+                <div onclick="startStop()" class="btn-1">
+                    <i class="fa-solid fa-play" id="play"></i>
+                    <i class="fa-solid fa-pause" id="pause"></i>
+                </div>
+                <div onclick="reset()" class="btn-2" id="reset-btn" >
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

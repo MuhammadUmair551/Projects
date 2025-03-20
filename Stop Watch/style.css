@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid black;   
+}
+.stop-watch-container{
+    background-color: #2c303d;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 10px;
+}
+.row-1{
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    display: flex;
+    color: #eef0ff;
+}
+
+.Timer{
+    border: 1px solid black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+.stop-watch{
+    border: 1px solid black;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.8rem;
+    padding: 10px;
+    background-color:  #595e7e;
+}
+.stop-watch:hover{
+    background-color: rgb(83, 84, 114);
+    cursor: pointer;
+}
+.Timer:hover{
+    background-color: rgb(83, 84, 114);
+    cursor: pointer;
+    
+}
+.right-side{
+    display: flex;
+    color: #eef0ff;
+}
+.sound{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 0.8rem;
+}
+.sound:hover{
+    background-color: rgb(83, 84, 114);
+    cursor: pointer;
+}
+.fullscreen{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    border: none;
+}
+.fullscreen:hover{
+    background-color: rgb(83, 84, 114);
+    cursor: pointer;
+}
+.row-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    height: 300px;
+}
+.stop-watch-numbers{
+    display: flex;
+    color: #eef0ff;
+}
+.row-3{
+    color: #eef0ff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.btn-1{
+    border: 1px solid black;
+    width: 49%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color:  #595e7e;
+}
+.btn-1 .fa-pause{
+    display: none;
+}
+.btn-1:hover{
+    background-color: rgb(115, 117, 153);
+    cursor: pointer;
+}
+.btn-2{
+    background-color:  #595e7e;
+    border: 1px solid black;
+    width: 49%;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+.btn-2:hover{
+    background-color: rgb(115, 117, 153);
+    cursor: pointer;
+}
+#min{
+    display: none;
+}
+#min-dot{
+    display: none;
+}
