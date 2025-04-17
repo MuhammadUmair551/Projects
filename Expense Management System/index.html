@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="to-do">
+            <h1 style="color: white; text-align: center; background-color: #9AD2CB; padding: 10px; border-top-left-radius: 20px; border-top-right-radius: 20px;">Expense Management System</h1>
+            <div id="total-div">
+                <h2 id="total" style="color: rgb(55, 54, 54); font-weight: lighter;">Total: 0</h2>
+            </div>
+            <div class="inp-btn">
+                <input type="text" id="inp-name" placeholder="Item Name">
+                <input type="number" id="inp-price" placeholder="Item Price" >
+                <button onclick="Add()" class="btn"><i class="fa-solid fa-plus"></i></button>
+                <button onclick="delAll()" class="btn"><i class="fa-solid fa-trash"></i></button>
+            </div>
+            
+            <div class="ul-box">
+                <div id="Item-heading">
+                    
+                </div>
+                <div id="Items-price-heading">
+                    
+                </div>
+                <ul id="unordered-list">
+
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
