@@ -70,10 +70,7 @@ h1 {
     border-color: #AF1B3F;
     box-shadow: 0 0 5px #AF1B3F;
 }
-.btns{
-    display: flex;
-    justify-content: space-evenly;
-}
+
 .btn {
     padding: 10px 20px;
     border-radius: 30px;
