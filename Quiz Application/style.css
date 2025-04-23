@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.quiz-card {
+    max-width: 500px;
+    margin: 80px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-check {
+    margin-top: 10px;
+}
+
+.next-btn {
+    margin-top: 20px;
+    width: 100%;
+}
+.quiz-shoru{
+    display: none;
+}
+
+.display .start-quiz{
+    display: none;
+}
+.display .quiz-shoru{
+    display: block;
+}
