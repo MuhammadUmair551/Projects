@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <h1></h1>
+    <div class="container">
+        <div class="mobile">
+                <input readonly class="inp" 
+                type="text" name=""  id="inpp">
+            <div class="buttons">
+                <div class="row">
+                    <button onclick="clr()" class="btn gray">C</button>
+                    <button onclick="clrall()" class="btn gray">CL</button>
+                    <button onclick="Clicking('%')" class="btn gray">%</button>
+                    <button onclick="Clicking('/')" class="btn orange">÷</button>
+                </div>
+                <div class="row">
+                    <button onclick="Clicking(7)" class="btn dark">7</button>
+                    <button onclick="Clicking(8)" class="btn dark">8</button>
+                    <button onclick="Clicking(9)" class="btn dark">9</button>
+                    <button onclick="Clicking('*')" class="btn orange">×</button>
+                </div>
+                <div class="row">
+                    <button onclick="Clicking(4)" class="btn dark">4</button>
+                    <button onclick="Clicking(5)" class="btn dark">5</button>
+                    <button onclick="Clicking(6)" class="btn dark">6</button>
+                    <button onclick="Clicking('-')" class="btn orange">−</button>
+                </div>
+                <div class="row">
+                    <button onclick="Clicking(1)" class="btn dark">1</button>
+                    <button onclick="Clicking(2)" class="btn dark">2</button>
+                    <button onclick="Clicking(3)" class="btn dark">3</button>
+                    <button onclick="Clicking('+')" class="btn orange">+</button>
+                </div>
+                <div class="row">
+                    <button onclick="Clicking(0)" class="btn dark zero">0</button>
+                    <button onclick="Clicking('.')" class="btn dark">.</button>
+                    <button onclick="equ()" class="btn orange">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
