@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navbar ul li a {
+    padding: 0;
+    font-size: small;
+}
+
+.me-img a img {
+    border-radius: 50%;
+}
+
+.dropdownss {
+    border-right: 1px solid rgb(121, 119, 119);
+}
+
+.navbar-collapse {
+    padding-left: 100px;
+}
+
+.form-control {
+    font-size: small;
+}
+
+.my-pic {
+    left: 20px;
+    top: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.card-text {
+    font-size: 10px;
+}
+
+.post-sec input {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.post-btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.post-btns .btn:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.hero {
+    background-color: #f4f2ee;
+}
+
+.block {
+    display: inline-block;
+}
+
+.games:hover {
+    background-color: #EBEBEB;
+    cursor: pointer;
+}
+
+.bruh {
+    margin-bottom: 0 !important
+}
+
+.para-items:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post-no-1 {
+    border: 1px solid rgb(184, 182, 182);
+    border-radius: 10px;
+    background-color: white;
+}
+
+@media screen and (max-width: 992px) {
+    .postt-sec {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .post-btns button, .postt-sec, .game-card, .add-feed .post-1-comment, .para-items {
+        font-size: small;
+    }    
+}
