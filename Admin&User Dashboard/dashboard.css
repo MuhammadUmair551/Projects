@@ -1,0 +1,107 @@
+body {
+  min-height: 100vh;
+}
+
+
+.sidebar a {
+  color: #ffffff;
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #F2D388;
+  color: #1b998b;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+.Card {
+  background: linear-gradient(to bottom right, #ffffff, #F2D388);
+  border: 1px solid #9AD2CB;
+  box-shadow: 0 4px 6px rgba(27, 153, 139, 0.1);
+  color: #1b998b;
+  border-radius: 12px;
+}
+
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.topbar {
+  background: linear-gradient(to right, #DECDF5, #F2D388);
+  color: #1b998b;
+  padding: 15px 25px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.card-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #DECDF5, #F2D388);
+  color: #1b998b;
+  border-radius: 10px;
+}
+
+
+.product-card {
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #374151;
+  color: #3b82f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
+}
+
+.sidebar {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #9AD2CB, #DECDF5);
+  color: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.container-fluid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.row {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-caption {
+  max-height: 50px;
+  overflow: auto;
+}
+
+.card:hover, .btn:hover {
+  box-shadow: 0 8px 12px rgba(59, 130, 246, 0.25);
+}
+
+.btn-custom {
+  background-color: #F2D388;
+  border: none;
+  color: #1b998b;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #DECDF5;
+  color: #0d5d56;
+}
