@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - SignUp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Instrument+Serif:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poetsen+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --secondary: #4D44DB;
+            --accent: #FF6584;
+            --light: #F9F9F9;
+            --dark: #2E2E2E;
+        }
+
+        body {
+            font-family: "Roboto Condensed", sans-serif;
+            background-color: var(--light);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .auth-left {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .auth-left h2 {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .auth-left p {
+            opacity: 0.9;
+        }
+
+        .auth-right {
+            padding: 3rem;
+        }
+
+        .auth-logo {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        .form-control {
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
+        }
+
+        @media (max-width: 768px) {
+            .auth-left {
+                padding: 2rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="text-center py-2"><h1 style="color: #6C63FF;"><i>Shop Easy</i></h1></div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="auth-container">
+                    <div class="row g-0">
+                        <div class="col-lg-6 auth-left">
+                            <h2>Welcome Back!</h2>
+                            <p>Join our community to access exclusive deals, track your orders, and save your favorite
+                                items.</p>
+                        </div>
+                        <div class="col-lg-6 auth-right">
+                            <div class="form-container">
+                                <h3 class="text-center mb-4">Log in</h3>
+
+                                <div id="form">
+                                    <input type="hidden" id="role" name="role" value="User">
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control" placeholder="Enter your email"
+                                            id="email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-control" placeholder="Create a password"
+                                            id="password">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-primary w-100" onclick="logIn()">Login</button>
+                                </div>
+                                <p class="text-center mt-3">Don't have an account? <a href="index.html">Sign Up</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
