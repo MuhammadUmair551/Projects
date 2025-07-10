@@ -217,24 +217,16 @@ let viewAll = () => {
 
 let searchProducts = () => {
     let searchInput = document.querySelector('.search-inp').value.toLowerCase().trim();
-    let productsContainer = document.querySelector('#featured-products');
-    productsContainer.innerHTML = '';
+    let productsCards = document.querySelectorAll('#featured-products .card');
 
-    if (searchInput == "mens" || searchInput == "men's clothing" || searchInput == "jacket" || searchInput == "shirt" || searchInput == "pants" || searchInput == "t-Shirt") {
-        displayMensClothing();
-    } if (searchInput == "women" || searchInput == "women's clothing" || searchInput == "dress" || searchInput == "skirt" || searchInput == "blouse" || searchInput == "t-Shirt") {
-        displayWomensClothing();
-    } if (searchInput == "jewelry" || searchInput == "necklace" || searchInput == "ring" || searchInput == "bracelet") {
-        displayJewelery();
-    } if (searchInput == "electronics" || searchInput == "phone" || searchInput == "monitor" || searchInput == "tablet") {
-        displayElectronics();
-    }
-    else {
-        productsContainer.innerHTML = `<div class="col-12 text-center">
-            <h2 class="text-danger">No products found for "${searchInput}"</h2>
-            <p class="text-muted">Please try searching for a different product.</p>
-        </div>`;
-    }
+    productsCards.forEach((card)=>{
+        let title = card.querySelector(".card-title").textContent.toLowerCase().trim();
+        if(title.includes(searchInput)){
+            card.parentElement.style.display = "block"
+        }else{
+            card.parentElement.style.display = "none"
+        }
+    })
 }
 
 
