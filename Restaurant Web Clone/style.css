@@ -1,0 +1,244 @@
+html,
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.navbar a {
+    color: white !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar a:hover{
+    color: #C59D5F !important;
+}
+.navbar-toggler {
+    background-color: white !important;
+}
+
+.navbar-collapse {
+    margin-top: 10px;
+    max-height: 80px;
+    overflow: auto;
+}
+
+.navbar-collapse ul li {
+    padding: 0px 5px;
+}
+
+.navbar-nav {
+    /* padding-bottom: 10px; */
+}
+.respon{
+    position: relative;
+}
+.respon::after{
+    content: '';
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: yellow;
+    position: absolute;
+}
+.respon::before{
+    content: '';
+    bottom: 0;
+    left: -30px;    
+    width: 30px;
+    height: 3px;
+    background-color: yellow;
+    position: absolute;
+}
+.header-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1551529834-525807d6b4f3?q=80&w=1431&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+    height: 100vh !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.header-hero-text h1 {
+    font-style: italic;
+    color: white !important;
+    font-size: 80px !important;
+}
+
+.font {
+    font-family: "Playball", cursive;
+}
+
+.back-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://papaya-sfogliatella-1cf8f0.netlify.app/28.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.view-gall:hover {
+    cursor: pointer;
+    color: black !important;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.deals-sec {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://papaya-sfogliatella-1cf8f0.netlify.app/8.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 110vh;
+}
+
+.font-clr {
+    color: #C59D5F;
+}
+
+.deals-hov {
+    color: white;
+}
+
+.deals-hov:hover {
+    cursor: pointer;
+    background-color: rgb(40, 39, 39, 0.9);
+    color: #C59D5F;
+    transform: scale3d(1.05, 1.05, 1.05);
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+.dishes {
+    position: relative;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.dishes::after {
+    content: '';
+    position: absolute;
+    border-top: dotted 2px white;
+    bottom: 0;
+    width: 70vw;
+}
+
+.online-btn:hover {
+    background-color: rgb(40, 40, 40, 0.8);
+    color: #C59D5F;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.our-menu-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("https://papaya-sfogliatella-1cf8f0.netlify.app/17.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem;
+}
+.online-Reservation-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("https://papaya-sfogliatella-1cf8f0.netlify.app/33.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem;
+}
+.contact-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("https://papaya-sfogliatella-1cf8f0.netlify.app/32.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem;
+}
+.dish-Item{
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.dish-text{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.dish-text-con{
+    color: grey;
+}
+.dish-text-i{
+    position: relative;
+    white-space: nowrap;
+}
+.dish-text-i::before{
+    content: '';
+    position: absolute;
+    border: dotted  2px gray;
+    width: 100%;
+}
+.dish-container:hover{
+    background-color: black;
+    color: #C59D5F;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.chef-selected{
+    border: 5px solid #C59D5F;
+    position: relative;
+}
+.chef-sel-div{
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    font-size: medium;
+    background-color: #C59D5F;
+    color: white;
+    font-family: "Playball", cursive;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+.gallery-pic{
+    position: relative;
+    overflow: hidden;
+}
+.overlay-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 38, 38, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery-pic:hover  .overlay-div {
+    opacity: 1;
+    cursor: pointer;
+}
+.inp-field{
+    padding: 20px 50px;
+    font-weight: 700;
+    color: rgb(145, 144, 144);
+    font-size: 13px;
+    border: none;
+    background-color: rgb(245, 244, 244);
+    border-radius: 0%;
+    margin-top: 20px;
+    width: 90% !important;
+}
+.btn-hov{
+    margin-top: 30px;
+    padding: 10px 50px; 
+    background-color: black; 
+    color: #C59D5F;
+}
+.btn-hov:hover{
+    transition: all 0.5s ease-in-out;
+    color: white;
+    background-color: black;
+}
