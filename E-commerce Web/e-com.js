@@ -1,4 +1,3 @@
-//  GSAP
 gsap.from(".hero-section h1", {
     opacity: 0,
     y: -50,
