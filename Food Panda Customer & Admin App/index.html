@@ -2,59 +2,191 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodPanda - Food Delivery</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="landing.css">
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <h1 class="text-center welcome">Food Panda App<i class="fa-solid fa-paw px-3"></i></h1>
-                <p class="text-center">Please fill in the form below to create an account.</p>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-paw me-2"></i>Food<span class="text-warning">Panda</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-light">Login</a>
+                    <a href="signup.html" class="btn btn-warning">Sign Up</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="form-container">
-        <h3 class="text-center mb-4">Sign Up</h3>
+    </nav>
 
-        <div class="role-btns mb-3">
-            <div class="btn-group w-100" role="group" aria-label="Role selection">
-                <input type="radio" class="btn-check" name="role" id="adminRadio" autocomplete="off" checked>
-                <label class="btn btn-outline-warning" for="adminRadio">Admin</label>
-
-                <input type="radio" class="btn-check" name="role" id="userRadio" autocomplete="off">
-                <label class="btn btn-outline-warning" for="userRadio">User</label>
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="display-3 fw-bold mb-4">
+                        Delicious Food <br>Delivered <span class="text-warning">Fast</span>
+                    </h1>
+                    <p class="lead mb-4">
+                        Order your favorite meals from the best restaurants in town. 
+                        Fresh, hot, and delivered right to your doorstep.
+                    </p>
+                    <div class="d-flex gap-3 hero-buttons flex-wrap">
+                        <a href="signup.html" class="btn btn-warning btn-lg">Get Started</a>
+                        <a href="login.html" class="btn btn-outline-light btn-lg">Login</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Delicious Food" class="img-fluid floating rounded">
+                </div>
             </div>
         </div>
+    </section>
 
-        <div id="form">
-            <input type="hidden" id="role" name="role" value="User">
-            <div class="mb-3">
-                <label class="form-label">Full Name</label>
-                <input type="text" class="form-control" placeholder="Enter your full name" id="fullName">
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Why Choose <span class="text-danger">FoodPanda</span></h2>
+                <p class="lead text-muted">We make food delivery simple and enjoyable</p>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" placeholder="Enter your email" id="email">
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fa-solid fa-clock fa-3x"></i>
+                        </div>
+                        <h5>Fast Delivery</h5>
+                        <p class="text-muted small">30 minutes or it's free</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fa-solid fa-utensils fa-3x"></i>
+                        </div>
+                        <h5>Quality Food</h5>
+                        <p class="text-muted small">From best restaurants</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fa-solid fa-truck fa-3x"></i>
+                        </div>
+                        <h5>Free Delivery</h5>
+                        <p class="text-muted small">On orders above $20</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fa-solid fa-headset fa-3x"></i>
+                        </div>
+                        <h5>24/7 Support</h5>
+                        <p class="text-muted small">Always here to help</p>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control" placeholder="Create a password" id="password">
-            </div>
-            <button type="submit" class="btn btn-signup w-100" onclick="signUp()">Sign Up</button>
         </div>
-        <p class="text-center mt-3">Already have an account? <a href="login.html">Login</a></p>
-    </div>
+    </section>
 
-    <script src="app.js"></script>
+    <section id="categories" class="categories-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Popular <span class="text-danger">Categories</span></h2>
+                <p class="lead text-muted">Browse through our most popular food categories</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="category-card text-center p-4">
+                        <div class="category-icon mb-3">
+                            <i class="fa-solid fa-pizza-slice fa-3x"></i>
+                        </div>
+                        <h5>Fast Food</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="category-card text-center p-4">
+                        <div class="category-icon mb-3">
+                            <i class="fa-solid fa-bowl-food fa-3x"></i>
+                        </div>
+                        <h5>Desi Food</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="category-card text-center p-4">
+                        <div class="category-icon mb-3">
+                            <i class="fa-solid fa-ice-cream fa-3x"></i>
+                        </div>
+                        <h5>Desserts</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="category-card text-center p-4">
+                        <div class="category-icon mb-3">
+                            <i class="fa-solid fa-mug-hot fa-3x"></i>
+                        </div>
+                        <h5>Beverages</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="fa-solid fa-paw me-2 text-danger"></i>FoodPanda</h5>
+                    <p class="text-muted">Delivering happiness to your doorstep.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-decoration-none text-muted">Home</a></li>
+                        <li><a href="#features" class="text-decoration-none text-muted">Features</a></li>
+                        <li><a href="#categories" class="text-decoration-none text-muted">Categories</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="fa-solid fa-location-dot me-2 text-danger"></i> Karachi, Pakistan</li>
+                        <li><i class="fa-solid fa-envelope me-2 text-danger"></i> info@foodpanda.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0 text-muted">&copy; 2025 FoodPanda. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
